@@ -26,28 +26,7 @@ BellmanFord::BellmanFord(Graph *graph)
     edgeNum = graph->getEdgeNum();
     edgeTable = graph->getEdgeTable();
 
-    //case 7/8 = 200
-    if(vertexNum <= 80){
-        maxPaths = 50;
-    }else if(vertexNum <= 100){     //case 6 = 100
-        maxPaths = 350;
-    } else if(vertexNum <= 150){    //case 7 = 150 -- reverse
-        maxPaths = 15;
-    } else if(vertexNum <= 200) {   //case 8 = 200
-        maxPaths = 500;
-    } else if(vertexNum <= 250) {   //case 9 = 250 -- reverse
-        maxPaths = 180;
-    } else if(vertexNum <= 350) {   //case 10 = 300 -- reverse
-        maxPaths = 500;
-    }else if(vertexNum <= 550 && mustPassNum >= 25) {   //case 11 --reverse
-        maxPaths = 50;
-    } else if(vertexNum <= 550 && mustPassNum < 23) {   //case 12 --reverse
-        maxPaths = 50;
-    } else if(vertexNum <= 550 && mustPassNum < 25) {   //case 13 --reverse
-        maxPaths = 50;
-    } else {
-        maxPaths = 200;
-    }
+	maxPaths = 50;
 
     //设置新权重
     edgeWeights = new int[edgeNum];

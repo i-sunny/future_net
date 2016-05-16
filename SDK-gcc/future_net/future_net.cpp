@@ -44,33 +44,9 @@ int main(int argc, char *argv[])
     
     Path *path;
     
-    if ((gph.getVertexNum() < 150) ||   //case 1-6
-        (gph.getVertexNum() == 200))   //case 8 = 200
-    {
-        BellmanFord bellmanFord(&gph);
-        path = bellmanFord.searchRoute();
-        PathManager::writePath(&gph, path);
-    }
-    else if ((gph.getVertexNum() == 150) ||   //case 7 = 150
-            (gph.getVertexNum() == 250)  ||   //case 9 = 250
-            (gph.getVertexNum() == 500 && gph.demands.count() >= 23))     //case 11,13
-    {
-        gph.reverseGraph();
-        BellmanFord reBellmanFord(&gph);
-        path = reBellmanFord.searchRoute();
-        reverse(path->edges.begin(), path->edges.end());
-        PathManager::writePath(&gph, path);
-    }else if(gph.getVertexNum() == 300){         //case 10 = 300
-        gph.reverseGraph();
-        PriorityQueueGreedy priorityQueueGreedy(&gph);
-        path = priorityQueueGreedy.searchRoute();
-        reverse(path->edges.begin(), path->edges.end());
-        PathManager::writePath(&gph, path);
-    } else {    //case 14,15, 12
-        PriorityQueueGreedy priorityQueueGreedy(&gph);
-        path = priorityQueueGreedy.searchRoute();
-        PathManager::writePath(&gph, path);
-    }
+    BellmanFord bellmanFord(&gph);
+    path = bellmanFord.searchRoute();
+    PathManager::writePath(&gph, path);
 
     
     char *result_file = argv[3];
