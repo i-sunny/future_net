@@ -1,0 +1,124 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BellmanFord	bellmanFord.cpp	/^BellmanFord::BellmanFord(Graph *graph)$/;"	f	class:BellmanFord
+BellmanFord	bellmanFord.h	/^    BellmanFord(const BellmanFord &bellmanFord) {}$/;"	f	class:BellmanFord
+BellmanFord	bellmanFord.h	/^class BellmanFord$/;"	c
+Edge	graph.h	/^	Edge() {}$/;"	f	struct:Edge
+Edge	graph.h	/^	Edge(int oid, int id, int sID, int dID, int c):$/;"	f	struct:Edge
+Edge	graph.h	/^struct Edge {$/;"	s
+Graph	graph.cpp	/^Graph::Graph(char ** topo, int edge_num, char *demand, int demand_num) {$/;"	f	class:Graph
+Graph	graph.h	/^class Graph {$/;"	c
+ID	graph.h	/^	int ID;$/;"	m	struct:Edge
+ID	graph.h	/^	int ID;$/;"	m	struct:Vertex
+INLINE	define.h	4;"	d
+MAX_COST	define.h	11;"	d
+MAX_EDGE_NUM	define.h	10;"	d
+MAX_LINE_LEN	define.h	8;"	d
+MAX_RECORD	define.h	7;"	d
+MAX_VERTEX_NUM	define.h	9;"	d
+PRINT	define.h	5;"	d
+PathManager	pathManager.cpp	/^PathManager::PathManager(int capacity)$/;"	f	class:PathManager
+PathManager	pathManager.h	/^    PathManager(const PathManager &pathManager) {}$/;"	f	class:PathManager
+PathManager	pathManager.h	/^class PathManager$/;"	c
+RECORD_QUEUE_S	io.cpp	/^}RECORD_QUEUE_S;$/;"	t	typeref:struct:__anon1	file:
+Vertex	graph.h	/^	Vertex() { inEdge.reserve(8); outEdge.reserve(8); }$/;"	f	struct:Vertex
+Vertex	graph.h	/^	Vertex(int oid, int id, bool mp=0, int idg=0, int odg=0):$/;"	f	struct:Vertex
+Vertex	graph.h	/^struct Vertex {$/;"	s
+VertexInfo	bellmanFord.cpp	/^BellmanFord::VertexInfo::VertexInfo(int initSize)$/;"	f	class:BellmanFord::VertexInfo
+VertexInfo	bellmanFord.h	/^    class VertexInfo$/;"	c	class:BellmanFord
+_BELLMANFORD_H	bellmanFord.h	2;"	d
+_DEFINE_H	define.h	2;"	d
+_GRAPH_H	graph.h	2;"	d
+_PATHMANAGER_H	pathManager.h	2;"	d
+__LIB_IO_H__	lib/lib_io.h	2;"	d
+__LIB_RECORD_H__	lib/lib_record.h	2;"	d
+__LIB_TIME_H__	lib/lib_time.h	2;"	d
+__ROUTE_H__	route.h	2;"	d
+addEdge	graph.cpp	/^int Graph::addEdge(int oldID, int sourceID, int destinationID, int cost) {$/;"	f	class:Graph
+addNode	pathManager.cpp	/^int PathManager::addNode(const int pathID, const int vertexID, const int edgeID, const int edgeWeight, const bool mustPass)$/;"	f	class:PathManager
+addPath	pathManager.cpp	/^int PathManager::addPath(const int vertexID, const int edgeWeight)$/;"	f	class:PathManager
+addVertex	graph.cpp	/^int Graph::addVertex(int oldID) {$/;"	f	class:Graph
+capacity	pathManager.h	/^    int capacity;$/;"	m	class:PathManager
+cnt	io.cpp	/^    int cnt;$/;"	m	struct:__anon1	file:
+cost	graph.h	/^	int cost;$/;"	m	struct:Edge
+destinationID	graph.h	/^	int destinationID;$/;"	m	struct:Edge
+dstID	bellmanFord.h	/^    int dstID;$/;"	m	class:BellmanFord
+dstID	graph.h	/^	int dstID;$/;"	m	class:Graph
+edgeID	pathManager.h	/^        int edgeID;$/;"	m	struct:PathManager::node
+edgeMap	graph.h	/^	map<int, int> edgeMap; \/\/ Edge old ID映射ID$/;"	m	class:Graph
+edgeNum	bellmanFord.h	/^    int edgeNum;$/;"	m	class:BellmanFord
+edgeNum	graph.h	/^	int edgeNum;$/;"	m	class:Graph
+edgeTable	bellmanFord.h	/^    const Edge *edgeTable;$/;"	m	class:BellmanFord
+edgeTable	graph.h	/^	Edge edgeTable[MAX_EDGE_NUM]; \/\/ 保存Edge，table[EID]复杂度1$/;"	m	class:Graph
+edgeWeights	bellmanFord.h	/^    int *edgeWeights;$/;"	m	class:BellmanFord
+enlarge	pathManager.cpp	/^void PathManager::enlarge()$/;"	f	class:PathManager
+g_result	io.cpp	/^static char g_result[MAX_LINE_LEN] = "NA";$/;"	v	file:
+getDstID	graph.h	/^	int getDstID() { return dstID; }$/;"	f	class:Graph
+getEdge	graph.cpp	/^bool Graph::getEdge(int sourceID, int destinationID, int &ID) {$/;"	f	class:Graph
+getEdgeNum	graph.h	/^	int getEdgeNum() { return edgeNum; }$/;"	f	class:Graph
+getEdgeTable	graph.h	/^	const Edge* getEdgeTable() { return edgeTable; } \/\/ 返回不能修改的边数组$/;"	f	class:Graph
+getPath	pathManager.cpp	/^bool PathManager::getPath(const int pathID, int *path, int &length) const$/;"	f	class:PathManager
+getSrcID	graph.h	/^	int getSrcID() { return srcID; }$/;"	f	class:Graph
+getVertexNum	graph.h	/^	int getVertexNum() { return vertexNum; }$/;"	f	class:Graph
+getVertexTable	graph.h	/^	const Vertex* getVertexTable() { return vertexTable; } \/\/ 返回不能修改的顶点数组$/;"	f	class:Graph
+getWeight	pathManager.cpp	/^int PathManager::getWeight(const int pathID) const$/;"	f	class:PathManager
+graph	bellmanFord.h	/^    Graph *graph;$/;"	m	class:BellmanFord
+head	io.cpp	/^    int head;$/;"	m	struct:__anon1	file:
+inDegree	graph.h	/^	int inDegree;$/;"	m	struct:Vertex
+inEdge	graph.h	/^	vector<int> inEdge; \/\/ Edge ID$/;"	m	struct:Vertex
+isPassed	pathManager.cpp	/^bool PathManager::isPassed(const int pathID, const int vertexID) const$/;"	f	class:PathManager
+isPrefix	pathManager.cpp	/^bool PathManager::isPrefix(const int srcPathID, const int dstPathID) const$/;"	f	class:PathManager
+length	pathManager.h	/^        int length;$/;"	m	struct:PathManager::node
+main	future_net.cpp	/^int main(int argc, char *argv[])$/;"	f
+maxPaths	bellmanFord.h	/^    int maxPaths = 50;$/;"	m	class:BellmanFord
+maxWeight	bellmanFord.h	/^        int maxWeight;$/;"	m	class:BellmanFord::VertexInfo
+minWeight	bellmanFord.h	/^        int minWeight;$/;"	m	class:BellmanFord::VertexInfo
+mustPassNum	bellmanFord.h	/^    int mustPassNum;$/;"	m	class:BellmanFord
+mustPassNum	pathManager.h	/^        int mustPassNum;$/;"	m	struct:PathManager::node
+mustpass	graph.h	/^	bool mustpass;$/;"	m	struct:Vertex
+node	pathManager.h	/^    struct node$/;"	s	class:PathManager
+nodeList	pathManager.h	/^    node *nodeList;$/;"	m	class:PathManager
+oldID	graph.h	/^	int oldID;$/;"	m	struct:Edge
+oldID	graph.h	/^	int oldID;$/;"	m	struct:Vertex
+outDegree	graph.h	/^	int outDegree;$/;"	m	struct:Vertex
+outEdge	graph.h	/^	vector<int> outEdge; \/\/ Edge ID$/;"	m	struct:Vertex
+parentID	pathManager.h	/^        int parentID;$/;"	m	struct:PathManager::node
+pathManager	bellmanFord.h	/^    PathManager pathManager;$/;"	m	class:BellmanFord
+paths	bellmanFord.h	/^        std::vector<int> paths;$/;"	m	class:BellmanFord::VertexInfo
+penaltyWeight	bellmanFord.h	/^    const int penaltyWeight = 100000;$/;"	m	class:BellmanFord
+print_time	io.cpp	/^void print_time(const char * const head)$/;"	f
+read_file	io.cpp	/^int read_file(char ** const buff, const unsigned int spec, const char * const filename)$/;"	f
+record	io.cpp	/^    char *record[MAX_RECORD];$/;"	m	struct:__anon1	file:
+record_result	io.cpp	/^void record_result(unsigned short edge)$/;"	f
+release_buff	io.cpp	/^void release_buff(char ** const buff, const int valid_item_num)$/;"	f
+removeEdge	graph.cpp	/^void Graph::removeEdge(int edgeID) {$/;"	f	class:Graph
+restoreEdge	graph.cpp	/^void Graph::restoreEdge(int edgeID) {$/;"	f	class:Graph
+route	bellmanFord.h	/^    int route[MAX_VERTEX_NUM];$/;"	m	class:BellmanFord
+routeLength	bellmanFord.h	/^    int routeLength;$/;"	m	class:BellmanFord
+searchRoute	bellmanFord.cpp	/^bool BellmanFord::searchRoute()$/;"	f	class:BellmanFord
+search_route	route.cpp	/^void search_route(char *topo[5000], int edge_num, char *demand)$/;"	f
+size	pathManager.h	/^    int size;$/;"	m	class:PathManager
+sourceID	graph.h	/^	int sourceID;$/;"	m	struct:Edge
+srcID	bellmanFord.h	/^    int srcID;$/;"	m	class:BellmanFord
+srcID	graph.h	/^	int srcID;$/;"	m	class:Graph
+tail	io.cpp	/^    int tail;$/;"	m	struct:__anon1	file:
+toString	pathManager.cpp	/^string PathManager::toString(const int pathID) const$/;"	f	class:PathManager
+totalWeight	pathManager.h	/^        int totalWeight;$/;"	m	struct:PathManager::node
+updatePaths	bellmanFord.cpp	/^bool BellmanFord::updatePaths(VertexInfo *vertexInfos, VertexInfo *newVertexInfosint, int srcID, int edgeID)$/;"	f	class:BellmanFord
+vertexID	pathManager.h	/^        int vertexID;$/;"	m	struct:PathManager::node
+vertexInfos	bellmanFord.h	/^    VertexInfo *vertexInfos;$/;"	m	class:BellmanFord
+vertexMap	graph.h	/^	map<int, int> vertexMap; \/\/ Vertex old ID映射ID，map[VID]复杂度logV, map.count(VID)复杂度logV$/;"	m	class:Graph
+vertexNum	bellmanFord.h	/^    int vertexNum;$/;"	m	class:BellmanFord
+vertexNum	graph.h	/^	int vertexNum;$/;"	m	class:Graph
+vertexTable	bellmanFord.h	/^    const Vertex *vertexTable;$/;"	m	class:BellmanFord
+vertexTable	graph.h	/^	Vertex vertexTable[MAX_VERTEX_NUM]; \/\/ 保存Vertex，table[VID]复杂度1$/;"	m	class:Graph
+visitedVertexs	pathManager.h	/^        std::bitset<MAX_VERTEX_NUM> visitedVertexs;$/;"	m	struct:PathManager::node
+writePath	pathManager.cpp	/^void PathManager::writePath(const int pathID) const$/;"	f	class:PathManager
+write_file	io.cpp	/^INLINE void write_file(const bool cover, const char * const buff, const char * const filename)$/;"	f
+write_result	io.cpp	/^void write_result(const char * const filename)$/;"	f
+~BellmanFord	bellmanFord.cpp	/^BellmanFord::~BellmanFord()$/;"	f	class:BellmanFord
+~PathManager	pathManager.cpp	/^PathManager::~PathManager()$/;"	f	class:PathManager
